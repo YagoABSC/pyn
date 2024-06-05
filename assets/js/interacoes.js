@@ -14,12 +14,7 @@ new Typed('.digitando', {
     showCursor: false,
     onComplete: function(self) {
         setTimeout(function() {
-            let remover = document.querySelector('.main-2');
-            remover.remove();
-            document.querySelector('.sumido-topo-3').classList.add('topo-3');
-            document.querySelector('.topo-3').classList.remove('sumido-topo-3');
-            document.querySelector('.sumido-main-3').classList.add('main-3');
-            document.querySelector('.main-3').classList.remove('sumido-main-3');
+            window.location.href = "estagio3.html";            
         }, 1000); // 1 segundo após a conclusão
     }
    
