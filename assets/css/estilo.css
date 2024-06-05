@@ -403,7 +403,7 @@ ion-icon{
    
     .main-3{
         flex-direction: row;
-        padding: 70px 15%;
+        /* padding: 70px 15%; */
     }
    
     .destaque-3{
@@ -450,15 +450,15 @@ ion-icon{
     }
 
     .destaque-3 h1{
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
 
     .destaque-3 h3{
-        font-size: 2em;
+        font-size: 1.8em;
     }
     
     .destaque-3 p{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .destaque-3{
