@@ -2,7 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Typed.js initialization
 new Typed('.digitando', {
-    strings: ["Boa noite"],
+    strings: ["Boa noite",
+        // "Esse PIN é sobre:",
+        // "Comunicação e TI",
+        // "Impacto e importância",
+        // "Apresentado por:",
+        // "O cara em pé olhando pra você."
+    ],
     typeSpeed: 40,
     backSpeed: 0,
     showCursor: false,

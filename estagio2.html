@@ -9,6 +9,58 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
+            font-family: sans-serif;
+        }
+
+        header{
+            padding: 25px 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        h1{
+            margin: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(145, 79, 251);
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        img{
+            margin: 10px 0;
+        }
+        .muitos-cards{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-pin{
+            width: 200px;
+            text-align: center;
+            margin: 20px;
+            background: transparent;
+            box-shadow: 2px 5px 10px black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .card-pin img{
+            width: 100%;
+            height: 150px;
         }
 
     </style>
@@ -16,14 +68,36 @@
 <body>
     <header>
         <h1>PIN: IA</h1>
+        <h3>Por:<a href="estagio3.html">Yago Aparecido</a><p>Dev Front</p></h3>
     </header>
     <main>
-        <h3>Yago Aparecido</h3>
-        <p>Desenvolvedor</p>
-        <h2>A corrida ensandecida pelo pioneirismo e suas consequências</h2>
-        <img src="https://classic.exame.com/wp-content/uploads/2024/04/GettyImages-1305287633-e1712101053917.jpg?ims=750x/filters:quality(75):format(webp)" alt="amazon-fresh">
-        <h3><a href="https://exame.com/tecnologia/amazon-fresh-lojas-indianos-compras/">Amazon e IA</a></h3>
+       
+       <h2>A corrida pelo pioneirismo e suas consequências</h2>
+       <a href="https://exame.com/tecnologia/amazon-fresh-lojas-indianos-compras/"><img src="https://classic.exame.com/wp-content/uploads/2024/04/GettyImages-1305287633-e1712101053917.jpg?ims=750x/filters:quality(75):format(webp)" alt="amazon-fresh"></a>
     </main>
+    <footer>
+        <h3 style="text-align: center;">Ultimos Pins</h3>
+        <div class="muitos-cards">
+            
+            <div class="card-pin">
+                <img src="assets/img/pin-arthur.png" alt="">
+                <h3>Arthur</h3>
+                <a href="https://uiverse.io/">Veja mais</a>
+            </div>
+
+            <div class="card-pin">
+                <img src="assets/img/pin-luana.jpg" alt="">
+                <h3>Luana</h3>
+                <a href="https://www.youtube.com/watch?v=qXwWxRjrVA8">Veja mais</a>
+            </div>
+
+            <div class="card-pin">
+                <img src="assets/img/pin-tamara.png" alt="">
+                <h3>Tamara</h3>
+                <a href="assets/img/Apresentação sala.pdf">Veja mais</a>
+            </div>
+        </div>
+    </footer>
     
     
 </body>

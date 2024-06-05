@@ -75,7 +75,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 120px 5%;
+    padding: 120px 5% ;
 }
 
 /* Seção em destaque estágio 3 */
@@ -99,6 +99,18 @@ body{
     opacity: 0;
     animation: descerDeslizando 1s ease forwards; /* Animação ao carregar a página */
     animation-delay: .5s;
+}
+
+.quemfez{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+ion-icon{
+    color: white;
+    font-size: 36px;
+    padding: 10px 0;
 }
 
 .destaque-3 h3:nth-of-type(2){
@@ -132,7 +144,7 @@ body{
     font-size: 1.5em;
     color: white;
     text-decoration: none;
-    margin: 30px 25px 30px 0;
+    margin: 10px 25px 30px 0;
     opacity: 0;
     animation: entrarDeslizandoReverso 1s ease forwards; /* Animação ao carregar a página */
     animation-delay: calc(.1s * var(--i));
@@ -157,11 +169,55 @@ body{
 /* Foto estágio 3 */
 
 .pin-foto-3 img{
-    /* max-width: 450px; */
+    display: none;
     width: 100%;
     opacity: 0;
     animation: zoomAproximando 1s ease forwards; /* Animação ao carregar a página */
     animation-delay: 1s;
+}
+
+/* Sobre Pin */
+
+.sobre-pin h1{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: entrarDeslizando 1s ease forwards; /* Animação ao carregar a página */
+    animation-delay: 1s;
+}
+
+.sobre-pin p{
+    font-size: 1.3em;
+    opacity: 0;
+    animation: subirDeslizando 1s ease forwards; /* Animação ao carregar a página */
+    animation-delay: 1s;
+}
+
+/* Mais Pins */
+
+.mais-pins{
+    width: 100%;
+    padding: 10px;
+    /* margin-top: 50px; */
+}
+
+.pin{
+    display:grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #3c4554;
+    padding: 5px 10px;
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.pin div{
+    width: 100%;
 }
 
 @keyframes entrarDeslizando {
@@ -237,13 +293,15 @@ body{
 /* Animação de digitação */
 .digitando{
     font-family: sans-serif;
-    color: #2E8B57;
+    color: #fff;
     font-size: 1.5em;
     font-weight: 600;
     text-transform: capitalize;
     text-align: center;
 }
 
+
+/* Main estágio 2 */
 .main-2{
     position: relative;
     height: 100%;
@@ -264,7 +322,7 @@ body{
     cursor: none;
 }
 
-.sumido-topo-3, .sumido-main-3{
+.sumido-topo-3, .sumido-main-3, .sumido-footer-3{
     display: none;
 }
 
@@ -315,6 +373,16 @@ body{
         padding: 10px;
         margin: 0;
     }
+
+    .pin-foto-3 img{
+        display: block;
+    }
+
+    .mais-pins{
+        margin-top: 100px;
+    }
+
+    
     
 }
 
@@ -339,6 +407,14 @@ body{
     
     .destaque-3 p{
         font-size: 1em;
+    }
+
+    .digitando{
+        font-size: 2.5em;
+    }
+
+    ion-icon{
+        font-size: 46px;
     }
 }
 
@@ -367,5 +443,22 @@ body{
 
     .destaque-3{
         max-width: 700px;
+    }
+
+    .digitando{
+        font-size: 3em;
+    }
+
+    ion-icon{
+        font-size: 56px;
+    }
+
+    .sobre-pin h1{
+        font-size: 2.2em;
+        margin-bottom: 20px;
+    }
+    
+    .sobre-pin p{
+        font-size: 1.6em;
     }
 }
