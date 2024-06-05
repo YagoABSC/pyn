@@ -119,6 +119,12 @@ ion-icon{
     animation-delay: .5s;
 }
 
+.quemfez ion-icon{
+    opacity: 0;
+    animation: subirDeslizando 1s ease forwards; /* Animação ao carregar a página */
+    animation-delay: .5s;
+}
+
 .destaque-3 h3 span{
     color: rgb(145, 79, 251);
 }
@@ -128,6 +134,12 @@ ion-icon{
     opacity: 0;
     animation: entrarDeslizandoReverso 1s ease forwards; /* Animação ao carregar a página */
     animation-delay: .1s;
+}
+
+.destaque-3 p a{
+    text-decoration: none;
+    color: rgb(145, 79, 251);
+    font-weight: 600;
 }
 
 .redes-sociais-3 a{
